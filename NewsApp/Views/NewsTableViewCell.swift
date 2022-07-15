@@ -11,7 +11,7 @@ final class NewsTableViewCell: UITableViewCell {
     
     var newsViewModel: NewsViewModel? {
         didSet {
-            if let newsViewModel = newsViewModel {
+            if let newsViewModel = newsViewModel {
                 titleLablel.text = newsViewModel.title
                 NetworkManager.shared.getImage(urlString: newsViewModel.urlToImage) { (data) in
                     guard let data = data else { return }

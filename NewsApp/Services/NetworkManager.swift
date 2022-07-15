@@ -14,10 +14,10 @@ class NetworkManager {
     private init() {}
     
     private let baseUrlString = "https://newsapi.org/v2/"
-    private let USTopHeadline = "top-headlines?country=us"
+    private let usTopHeadline = "top-headlines?country=us"
     
     func getNews(completion: @escaping ([News]?) -> Void) {
-        let urlString = "\(baseUrlString)\(USTopHeadline)&apiKey=\(APIKey.key)"
+        let urlString = "\(baseUrlString)\(usTopHeadline)&apiKey=\(APIKey.key)"
         guard let url = URL(string: urlString) else {
             return
         }

@@ -9,7 +9,7 @@ import Foundation
 
 class NewsListViewModel {
     
-    var  newsViewModel = [NewsViewModel]()
+    var newsViewModel = [NewsViewModel]()
     
     let reuseID = "news"
     

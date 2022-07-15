@@ -8,7 +8,7 @@
 import UIKit
 
 final class HeaderView: UIView {
-    
+
     private var fontSize: CGFloat = 0.0
     
     private lazy var headingLabel: UILabel = {
@@ -16,15 +16,6 @@ final class HeaderView: UIView {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.text = "News"
         view.font = UIFont.boldSystemFont(ofSize: fontSize)
-        return view
-    }()
-    
-    private lazy var headerCircleImage: UIImageView = {
-        let view = UIImageView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.contentMode = .scaleAspectFit
-        let config = UIImage.SymbolConfiguration(pointSize: fontSize, weight: .bold)
-        view.image = UIImage(systemName: "", withConfiguration: config) // найти фотку для новостей
         return view
     }()
     
@@ -37,7 +28,7 @@ final class HeaderView: UIView {
     }()
     
     private lazy var headerStackView: UIStackView = {
-        let view = UIStackView(arrangedSubviews: [headerCircleImage, headingLabel, plusImage])
+        let view = UIStackView(arrangedSubviews: [headingLabel, plusImage])
         view.translatesAutoresizingMaskIntoConstraints = false
         view.axis = .horizontal
         return view
@@ -77,7 +68,6 @@ final class HeaderView: UIView {
             headerStackView.leadingAnchor.constraint(equalTo: leadingAnchor),
             headerStackView.topAnchor.constraint(equalTo: topAnchor)
         ])
-        
         //subheadline
         NSLayoutConstraint.activate([
             subheadlineLabel.leadingAnchor.constraint(equalTo: leadingAnchor),

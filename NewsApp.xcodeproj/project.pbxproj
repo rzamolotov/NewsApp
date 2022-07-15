@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		756B7D4D2881D5300063C85F /* NewsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 756B7D4B2881D5300063C85F /* NewsApp.xcdatamodeld */; };
+		756B7D502881D53E0063C85F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756B7D4F2881D53E0063C85F /* CoreDataStack.swift */; };
+		75CD5EC728805F9D000E3FE1 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CD5EC628805F9D000E3FE1 /* Category.swift */; };
 		765486CD287AF098003C45FB /* ShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765486CC287AF098003C45FB /* ShadowImageView.swift */; };
 		765486D0287AF7E3003C45FB /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765486CF287AF7E3003C45FB /* NewsTableViewCell.swift */; };
 		768D3DB228797EC9001DC010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768D3DB128797EC9001DC010 /* AppDelegate.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		756B7D4C2881D5300063C85F /* NewsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsApp.xcdatamodel; sourceTree = "<group>"; };
+		756B7D4F2881D53E0063C85F /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		75CD5EC628805F9D000E3FE1 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		765486CC287AF098003C45FB /* ShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowImageView.swift; sourceTree = "<group>"; };
 		765486CF287AF7E3003C45FB /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		768D3DAE28797EC9001DC010 /* NewsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		756B7D452881D4A30063C85F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				756B7D4B2881D5300063C85F /* NewsApp.xcdatamodeld */,
+				756B7D4F2881D53E0063C85F /* CoreDataStack.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		768D3DA528797EC9001DC010 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +85,7 @@
 		768D3DB028797EC9001DC010 /* NewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				756B7D452881D4A30063C85F /* CoreData */,
 				76AAEE8D2879950F00B880A1 /* Views */,
 				76AAEE8328798E1800B880A1 /* ViewModels */,
 				768D3DD2287983B4001DC010 /* Services */,
@@ -89,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				768D3DC9287981BC001DC010 /* APIKey.swift */,
+				75CD5EC628805F9D000E3FE1 /* Category.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -204,10 +221,13 @@
 				768D3DB628797EC9001DC010 /* ViewController.swift in Sources */,
 				768D3DB228797EC9001DC010 /* AppDelegate.swift in Sources */,
 				768D3DCA287981BC001DC010 /* APIKey.swift in Sources */,
+				756B7D502881D53E0063C85F /* CoreDataStack.swift in Sources */,
 				768D3DCF2879825F001DC010 /* News.swift in Sources */,
 				768D3DB428797EC9001DC010 /* SceneDelegate.swift in Sources */,
 				765486CD287AF098003C45FB /* ShadowImageView.swift in Sources */,
+				756B7D4D2881D5300063C85F /* NewsApp.xcdatamodeld in Sources */,
 				76AAEE8B28798FE600B880A1 /* NewsListViewModel.swift in Sources */,
+				75CD5EC728805F9D000E3FE1 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +423,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		756B7D4B2881D5300063C85F /* NewsApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				756B7D4C2881D5300063C85F /* NewsApp.xcdatamodel */,
+			);
+			currentVersion = 756B7D4C2881D5300063C85F /* NewsApp.xcdatamodel */;
+			path = NewsApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 768D3DA628797EC9001DC010 /* Project object */;
 }
